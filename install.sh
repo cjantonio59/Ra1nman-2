@@ -92,6 +92,12 @@ mv checkra1n /usr/local/bin/
 
 sudo -u#1000 pip uninstall RPi.GPIO
 
+cd /usr/local/share
+git clone https://github.com/neomatrix125/ra1nman
+cd ra1nman
+chmod +x run.sh
+cp ra1nman.service /etc/systemd/system/ && systemctl enable ra1nman.service
+
 sleep 1
 
 sudo reboot
