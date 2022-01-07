@@ -86,7 +86,7 @@ cd ..
 rm -R /tmp/*
 
 echo "Installing checkra1n"
-wget https://assets.checkra.in/downloads/linux/cli/arm/dde0ee4255403a427636bb76e09e409487f8be128af4b7d89fac78548bd5b35a/checkra1n
+wget https://assets.checkra.in/downloads/linux/cli/arm/ff05dfb32834c03b88346509aec5ca9916db98de3019adf4201a2a6efe31e9f5/checkra1n
 chmod +x checkra1n
 mv checkra1n /usr/local/bin/
 
