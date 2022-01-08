@@ -92,11 +92,12 @@ mv checkra1n /usr/local/bin/
 
 sudo -u#1000 pip uninstall RPi.GPIO
 
-cd /usr/local/share
-git clone https://github.com/neomatrix125/ra1nman
-cd ra1nman
-chmod +x run.sh
-cp ra1nman.service /etc/systemd/system/ && systemctl enable ra1nman.service
+cd ~
+sudo pip3 install --upgrade adafruit-python-shell click==7.0
+sudo apt-get install -y git
+git clone https://github.com/adafruit/Raspberry-Pi-Installer-Scripts.git
+cd Raspberry-Pi-Installer-Scripts
+sudo python3 adafruit-pitft.py --display=st7789_240x240 --rotation=0 --install-type=console
 
 sleep 1
 
